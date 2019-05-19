@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <ion-title>length</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-input [(ngModel)]="KmValue"            type="number" [placeholder]="KmValuePlaceholder"      (ionChange)="kmInput($event)"></ion-input>
+    <ion-input [(ngModel)]="meterValue"         type="number" [placeholder]="meterValuePlaceholder"       (ionChange)="meterInput($event)" ></ion-input>
+    <ion-input [(ngModel)]="cmValue"            type="number" [placeholder]="cmValuePlaceholder"      (ionChange)="cmInput($event)" ></ion-input>
+    <ion-input [(ngModel)]="millimeterValue"    type="number" [placeholder]="millimeterValuePlaceholder"      (ionChange)="mmInput($event)"></ion-input>
+    <ion-button color="light" expand="full" ion-button round (click)="Umrechnen()"> Umrechnen</ion-button>
+    <ion-button color="light" expand="full" ion-button round (click)="Reset()"> Reset </ion-button>
+
+</ion-content>
+<!--
+<ion-input [value]="KmValue"            type="number" placeholder="km"     (ionChange)="kmInput()"></ion-input> ></ion-input>
+    <ion-input [value]="meterValue"         type="number" placeholder="M"       (ionChange)="meterInput()" ></ion-input>
+    <ion-input [value]="cmValue"            type="number" placeholder="cm"      (ionChange)="cmInput()" ></ion-input>
+    <ion-input [value]="millimeterValue"    type="number" placeholder="mm"      (ionChange)="mmInput()" ></ion-input>
+-->

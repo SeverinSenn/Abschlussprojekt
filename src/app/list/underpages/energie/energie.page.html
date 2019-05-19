@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <ion-title>energie</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-input [value]="KmValue"            type="number" placeholder="km"      (ionInput)="kmInput" ></ion-input>
+  <ion-input [value]="meterValue"         type="number" placeholder="M"       (ionInput)="meterInput" ></ion-input>
+  <ion-input [value]="cmValue"            type="number" placeholder="cm"      (ionInput)="cmInput" ></ion-input>
+  <ion-input [value]="millimeterValue"    type="number" placeholder="mm"      (ionInput)="mmInput" ></ion-input>
+  <ion-button color="light" expand="full" ion-button round (click)="Umrechnen()"> Umrechnen</ion-button>
+  <ion-button color="light" expand="full" ion-button round (click)="Reset()"> Reset </ion-button>
+</ion-content>

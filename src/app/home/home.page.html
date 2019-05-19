@@ -1,0 +1,95 @@
+<ion-header>
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Rechner
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="background">         
+ </div>
+ 
+                <div id="result" >{{displayNumber}}</div>
+                 
+                
+                 
+                    
+                      <button class="del-bg" (click)="delPress()">Del</button>
+                    
+                    <button value="9" class="btn-style " (click)="numberPress(9)">9</button>                    
+                   <button value="8" class="btn-style" (click)="numberPress(8)">8</button>
+                   <button value="7" class="btn-style " (click)="numberPress(7)">7</button>
+                   <button value="*" class="btn-styleoperator" (click)="operatorPress('*')">*</button>  
+
+                   <button value="6" class="btn-style " (click)="numberPress(6)">6</button> 
+                   <button value="5" class="btn-style " (click)="numberPress(5)">5</button> 
+                   <button value="4" class="btn-style" (click)="numberPress(4)">4</button> 
+                   <button value="/" class="btn-styleoperator" (click)="operatorPress('/')">:</button>
+
+                   <button value="1" class="btn-style" (click)="numberPress(1)">1</button>
+                   <button value="2" class="btn-style "(click)="numberPress(2)">2</button> 
+                  <button value="3" class="btn-style "(click)="numberPress(3)">3</button>
+                   <button value="-" class="btn-styleoperator" (click)="operatorPress('-')">-</button> 
+               
+                     <button value="0" class="num-bgzero" id="delete1" (click)="numberPress(0)">0</button>
+                     <button value="." class="btn-style " (click)="numberPress('.')">.</button> 
+                     <button value="=" class="btn-style " (click)="equalPress()">=</button>
+                     <button value="+" class="btn-styleoperator" color="buttonPlusColor" (click)="operatorPress('+')">+</button>  
+                
+                
+<!--------
+   <ion-grid>
+    <ion-row>
+      <ion-col >
+        <div id="result" >{{displayNumber}}</div>
+          </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <button class="del-bg" (click)="delPress()">Del</button>
+            </ion-col>
+          </ion-row>
+          <ion-row>    
+    <ion-col > <button value="+" class="btn-styleoperator" color="buttonPlusColor" (click)="operatorPress('+')">+</button> </ion-col>
+    <ion-col > <button value="-" class="btn-styleoperator" (click)="operatorPress('-')">-</button></ion-col>        
+    <ion-col > <button value="*" class="btn-styleoperator" (click)="operatorPress('*')">*</button></ion-col>        
+    <ion-col > <button value="/" class="btn-styleoperator" (click)="operatorPress('/')">:</button></ion-col>               
+              </ion-row>
+          <ion-row>
+            <ion-col> <button value="7" class="btn-style " (click)="numberPress(7)">7</button> </ion-col>
+            <ion-col> <button value="4" class="btn-style" (click)="numberPress(4)">4</button> </ion-col>
+            <ion-col> <button value="1" class="btn-style1" (click)="numberPress(1)">1</button> </ion-col>
+          </ion-row>  
+          <ion-row>
+            <ion-col> <button value="8" class="btn-style" (click)="numberPress(8)">8</button> </ion-col>
+            <ion-col> <button value="5" class="btn-style " (click)="numberPress(5)">5</button> </ion-col>
+            <ion-col> <button value="2" class="btn-style "(click)="numberPress(2)">2</button> </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col> <button value="9" class="btn-style " (click)="numberPress(9)">9</button></ion-col>
+            <ion-col> <button value="6" class="btn-style " (click)="numberPress(6)">6</button> </ion-col>
+            <ion-col> <button value="3" class="btn-style "(click)="numberPress(3)">3</button> </ion-col>
+          </ion-row> 
+          <ion-row>
+            <ion-col>   <button value="0" class="num-bg zero" id="delete1" (click)="numberPress(0)">0</button></ion-col>
+              <ion-col> <button value="." class="btn-style " (click)="numberPress('.')">.</button> </ion-col>
+            <ion-col>   <button value="=" class="btn-style " (click)="equalPress()">=</button></ion-col>
+          </ion-row>
+          
+    </ion-grid>
+  
+--->
+
+<!--
+        <ion-row>
+  <ion-col offset="0" size="0">
+                                      <ion-col>
+      </ion-col>
+      </ion-row>
+
+-->

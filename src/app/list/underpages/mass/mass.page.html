@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <ion-title>mass</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-input [value]="Tonne"            type="number" placeholder="Tonne"      (ionChange)="TonneInput($event)" ></ion-input>
+  <ion-input [value]="Kilogramm"         type="number" placeholder="Kilogramm"       (ionChange)="KilogrammInput($event)" ></ion-input>
+  <ion-input [value]="Gramm"            type="number" placeholder="Gramm"      (ionChange)="GrammInput($event)" ></ion-input>
+  <ion-input [value]="Mikrokilogramm"    type="number" placeholder="Mikrokilogramm"      (ionChange)="MikrokilogrammInput($event)" ></ion-input>
+
+</ion-content>

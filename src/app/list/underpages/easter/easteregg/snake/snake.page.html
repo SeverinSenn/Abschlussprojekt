@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title>snake</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <body><div class="game-div">
+        <canvas id="game-canvas"></canvas>
+        <p>W-A-S-D</p>
+  <button class="UP" (onclick)="buttonUp()">UP</button>
+  <button class="Right"(onclick)="buttonRight()">Right</button>
+  <button class="Left" (onclick)="buttonLeft()">Left</button>
+  <button class="Left" (onclick)="buttonDown()">Down</button>
+    </div></body>
+    
+</ion-content>
